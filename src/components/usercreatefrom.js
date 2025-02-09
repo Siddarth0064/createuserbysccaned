@@ -103,11 +103,14 @@ export default function UserForm({ qrUrl }) {
         };
 
         try {
-            await axios.post("http://localhost:8080/rentmanagementsystem/createuser", userPayload,{
+            await axios.post("http://localhost:8080/rentmanagementsystem/createuser",
+             userPayload,
+             {
                 headers: {
                     Authorization: `Bearer ${token}`, // Include token for authentication if required
                 },
-            });
+            }
+        );
             alert("User Created Successfully!");
         } catch (error) {
             console.error("Error creating user:", error);
