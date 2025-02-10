@@ -2,7 +2,7 @@
   "name": "createuserbysccaned",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://siddarth0064.github.io/createuserbysccaned/",
+  "homepage": "https://siddarth0064.github.io/createuserbysccaned",
   "dependencies": {
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && sed -i 's|/static|/createuserbysccaned/static|g' build/index.html",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
